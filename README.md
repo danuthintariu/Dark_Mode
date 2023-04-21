@@ -1,6 +1,8 @@
 # Dark_Mode
 Dark_Mode skin for Rukovoditel
 
+![GitHub](https://img.shields.io/github/license/danuthintariu/Dark_mode)
+
 ### Tested for versions
 - Rukovoditel 3.3.1 -> Extension 3.3.1
 
