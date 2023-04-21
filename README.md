@@ -5,7 +5,7 @@ Dark_Mode skin for Rukovoditel
 - Rukovoditel 3.3.1 -> Extension 3.3.1
 
 
-*This template is still under development, there are still some sections to be solved.*
+*Please note: This template is still under development, there are still many things to solve. Some things were solved directly to suit my needs and there is a possibility that in another configuration it will work differently. But slowly it will take shape and can be used in any possible configuration.*
 
 
 <img src="https://user-images.githubusercontent.com/98109065/233652183-bfc674aa-24d4-4b5a-b689-8dc2c09b46d8.png" height="100"> <img src="https://user-images.githubusercontent.com/98109065/233653419-c02ff6c9-9ca7-483a-aac1-128bbd4e75ef.png" height="100"> <img src="https://user-images.githubusercontent.com/98109065/233653508-dd19671e-71b3-4803-8db2-0840de9351b3.png" height="100">
