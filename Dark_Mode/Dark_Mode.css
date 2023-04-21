@@ -59,12 +59,16 @@ DarkMode design START
   color: #d1d1d1;
   background-color: #222;
 }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  color: #d1d1d1;
+  background-color: #333437;
+}
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
   color: #c1c1c1;
   cursor: default;
   background-color: #292a2d;
   border: 1px solid #555;
-    border-bottom-color: rgb(221, 221, 221);
+  border-bottom-color: rgb(221, 221, 221);
   border-bottom-color: transparent;
 }
 
