@@ -1,6 +1,6 @@
 /***
 Dark_Mode
-Version 1.0
+Version 1.1
 -------------------------------
 //////Tested for versions//////
 ---------------------
@@ -113,6 +113,10 @@ DarkMode design START
 .dropdown-menu.extended {
   background-color: #292a2d !important;
 }
+.dropup.open > .dropdown-toggle, 
+.dropdown.open > .dropdown-toggle {
+  border-color: #3d3e43 !important;
+}
 
 
 .dropdown-checkboxes label {
@@ -221,8 +225,6 @@ legend {
 }
 
 
-
-
 .table > tbody > tr > td, 
 .table > tbody > tr > th, 
 .table > tfoot > tr > td, 
@@ -236,15 +238,45 @@ legend {
 }
 .table.thead-transform thead th.listing_order_asc, 
 .table.thead-transform thead th.listing_order_desc{
-    background: #222 !important;
+    background: #fff !important;
+}
+.table.thead-transform thead th:not(:last-child) {
+  background: url(../images/pixel_white.gif) right repeat-y;
+  filter: invert(80%) !important;
+  -webkit-filter: invert(80%) !important;
+  color: #222;
 }
 .editable-cell:hover {
   background-color: #464653 !important;
 }
 
 
+.listing_order_asc,
+.listing_order_desc {
+  background-image: none !important;
+  background-color: #333437 !important;
+}
+.listing_order_desc div:not(.resizer) {
+  background: url(../images/desc.gif) no-repeat right;
+  filter: invert(80%);
+  -webkit-filter: invert(80%);
+  color: #222;
+}
+.listing_order_asc div:not(.resizer) {
+  background: url(../images/asc.gif) no-repeat right;
+  filter: invert(80%);
+  -webkit-filter: invert(80%);
+  color: #222;
+}
+
+
 .fieldtype-image-container {
   background-color: #fff;
+}
+
+
+html .row-selected td {
+ background: #555 !important;
 }
 
 
@@ -256,8 +288,33 @@ a:hover{
 }
 
 
+.tooltip-icon {
+  color: #0099cc !important;
+}
+
+
+div.selector, 
+div.selector span, 
+div.checker span, 
+div.radio span, 
+div.uploader, 
+div.uploader span.action, 
+div.button, 
+div.button span {
+   filter: invert(80%);
+  -webkit-filter: invert(83%);
+}
+
+
 .btn-primary {
   border-color: #2d6a9f;
+}
+.btn-select-all {
+  border-color: #3d3e43;
+  background: #333437 !important;
+}
+.btn-select-all:hover {
+ color: #fff;
 }
 .btn-default {
   color: #9d9d9d;
@@ -298,6 +355,14 @@ a:hover{
 .form-section {
   color: #65c7f9 !important;
   border-bottom: 1px solid #555;
+}
+.form-section span {
+  color: #c1c1c1 !important;
+}
+.form-section span img{
+  margin-top: -3px;
+  filter: invert(80%);
+  -webkit-filter: invert(80%);
 }
 .form-actions {
   background-color: #292a2d;
@@ -363,6 +428,9 @@ a:hover{
   padding-left: 2px;
   padding-bottom: 7px;
   border-radius: 5px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #c1c1c1;
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
   background-color: #292a2d;
@@ -470,6 +538,11 @@ a:hover{
     background-color: #333437;
   border-radius: 0 0 5px 5px;
 }
+.modal-header .close,
+.modal-header .modal-collapse{
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
 
 
 .input-group-addon {
@@ -496,11 +569,12 @@ textarea[readonly] {
 }
 .cke_top {
   border-bottom: 1px solid #222 !important;
-  background: #292a2d !important;
+  background: #333437 !important;
 }
 .cke_bottom {
-  border-bottom: 1px solid #222 !important;
-  background: #292a2d !important;
+  border-top: 1px solid #222 !important;
+  border-bottom: 0px solid #222 !important;
+  background: #333437 !important;
 }
 .cke_resizer {
   border-color: transparent #555 transparent transparent !important;
@@ -510,6 +584,18 @@ textarea[readonly] {
 .cke_reset_all a, 
 .cke_reset_all textarea {
   color: #c1c1c1 !important;
+}
+.cke_button_icon {
+  filter: invert(80%);
+  -webkit-filter: invert(80%);
+}
+.cke_reset_all a:hover {
+  background-color: #292a2d !important;
+  border-color: #3d3e43 !important; 
+}
+.cke_contents {
+  filter: invert(50%);
+  -webkit-filter: invert(83%);
 }
 
 
@@ -568,6 +654,91 @@ textarea[readonly] {
 .chat-btn-submit:hover{
   color: #fff !important;
 }
+
+
+.CodeMirror {
+  color: #c1c1c1 !important;
+  background-color: #222 !important;
+  border-color: #3d3e43 !important;
+}
+.CodeMirror-gutters {
+  border-right: 1px solid #222 !important;
+  background-color: #292a2d !important;
+}
+.CodeMirror-selected {
+  background-color: #233 !important;
+}
+.CodeMirror-cursor {
+  border-left: 1px solid #c1c1c1 !important;
+}
+.cm-s-default .cm-tag {
+  color: #556699 !important;
+}
+.cm-s-default .cm-atom {
+  color: #cc0099 !important;
+}
+.cm-s-default .cm-keyword {
+  color: #ff4d4d !important;
+}
+.cm-s-default .cm-property {
+  color: #0099ff !important;
+}
+.cm-s-default .cm-qualifier {
+  color: #009900 !important;
+}
+.cm-s-default .cm-variable-3 {
+  color: #666699 !important;
+}
+.cm-s-default .cm-meta {
+  color: #cc00cc !important;
+}
+.cm-s-default .cm-string {
+  color: #228877 !important;
+}
+.cm-s-default .cm-variable {
+  color: #cc00cc !important;
+}
+.cm-s-default .cm-builtin {
+  color: #fff !important;
+}
+.cm-s-default .cm-variable-2 {
+  color: #cc88uu !important;
+}
+.cm-s-default .cm-attribute {
+  color: #ff5588 !important;
+}
+
+
+.dhtmlx-gantt-menu {
+  background: #292a2d !important;
+  border: 1px solid #3d3e43 !important;;
+}
+.gantt-control {
+  background-color: #292a2d !important;
+  color: #c1c1c1;
+  border-right: 1px solid #3d3e43 !important;
+}
+.gantt-control:hover {
+  background-color: #333437 !important;
+  color: #fff;
+}
+.gantt_container, .gantt_tooltip {
+  background-color: #333437 !important;
+}
+.gantt_layout_cell_border_top {
+  border-top: 1px solid #3d3e43 !important;
+}
+.gantt_layout_cell_border_bottom {
+  border-bottom: 1px solid #3d3e43 !important;
+}
+.gantt_layout_cell_border_left {
+  border-left: 1px solid #3d3e43 !important;
+}
+.gantt_layout_cell_border_right {
+  border-right: 1px solid #3d3e43 !important;
+}
+
+
 
 /***
 DarkMode design STOP
