@@ -124,6 +124,9 @@ DarkMode design START
 }
 
 
+.sortable ul li {
+  background-color: #292a2d !important;
+}
 .sortable li {
   color: #c1c1c1 !important;
   border: 1px solid #3d3e43 !important;
@@ -137,9 +140,6 @@ legend {
 }
 
 
-.fc-unthemed td.fc-today {
-  background-color: #333437 !important;
-}
 .fc-unthemed .fc-content, 
 .fc-unthemed .fc-divider, 
 .fc-unthemed .fc-list-heading td, 
@@ -152,12 +152,24 @@ legend {
 .fc-unthemed thead {
   border-color: #3d3e43 !important;
 }
-.fc-sun, .fc-sat {
+.fc-widget-header {
+  background-color: #292a2d !important;
+}
+.fc-day  {
   background-image: none !important;
 }
-.fc-unthemed .fc-sat, 
-.fc-unthemed .fc-sun {
-  background-color: #18191b !important;
+.fc-day:hover  {
+  background-color: #333437 !important;
+}
+.fc-unthemed td.fc-today {
+  background-color: #333437 !important;
+}
+.fc-unthemed .fc-list-empty {
+  background-color: #333437 !important;
+}
+.fc-button {
+  filter: invert(80%) !important;
+  -webkit-filter: invert(80%) !important;
 }
 
 
@@ -200,7 +212,7 @@ legend {
   border: 1px solid #222;
 }
 
-.table.table-striped.table-hover {
+.table.table-striped {
   background: #292a2d !important;
 }
 .table.table-striped, th {
@@ -209,10 +221,9 @@ legend {
 .table-striped > tbody > tr:nth-of-type(2n+1) {
   background-color: #333437;
 }
-/*
-.table-striped > tbody > tr:hover{
-  background-color: #444;
-}*/
+.table-striped tbody tr:hover{
+  background-color: #4f4f5f;
+}
 .tabbable-custom > .tab-content {
   background-color: #292a2d;
   border: 1px solid #555;
@@ -220,7 +231,7 @@ legend {
 .table-scrollable > .table {
   background-color: #333437;
 }
-.table-scrollable > .table tr:hover {
+.table-scrollable > .table tbody tr:hover {
   background-color: #4f4f5f;
 }
 
@@ -273,6 +284,9 @@ legend {
 .fieldtype-image-container {
   background-color: #fff;
 }
+.fieldtype-image-filename {
+  overflow: visible !important;
+}
 
 
 html .row-selected td {
@@ -285,6 +299,10 @@ a{
 }
 a:hover{
   color: #4a9ac6;
+}
+hr {
+  border-top-color: #333;
+  border-bottom-color: #444;
 }
 
 
@@ -314,7 +332,8 @@ div.button span {
   background: #333437 !important;
 }
 .btn-select-all:hover {
- color: #fff;
+  background-color: #292a2d !important;
+  color: #fff;
 }
 .btn-default {
   color: #9d9d9d;
@@ -335,14 +354,14 @@ div.button span {
 .btn-default:active, 
 .open > .dropdown-toggle.btn-default {
   color: #c1c1c1;
-  background-color: #333437;
+  background-color: #333437 !important;
   border-color: #3d3e43;
 }
 .btn-default.active, 
 .btn-default:active, 
 .open > .dropdown-toggle.btn-default:hover {
-  color: #c1c1c1;
-  background-color: #333437;
+  color: #c1c1c1 !important;
+  background-color: #333437 !important;
   border-color: #3d3e43;
 }
 
@@ -397,6 +416,9 @@ div.button span {
 }
 .chosen-container-active .chosen-choices {
   border-radius: 5px 5px 0 0;
+}
+.chosen-container-active .chosen-choices li.search-field input[type="text"] {
+  color: #c1c1c1 !important;
 }
 .chosen-container .chosen-results {
   color: #c1c1c1;
@@ -462,13 +484,13 @@ div.button span {
 
 
 .portlet {
-  border-color: #222;
+  border-color: #3d3e43;
 }
 .portlet > .portlet-title {
-  background-color: #292a2d !important;
+  background-color: #333437 !important;
 }
 .portlet > .portlet-body {
-  background-color: #333437;
+  background-color: #292a2d;
 }
 .prolet-body-actions {
   border-bottom: 1px solid #222 !important;
@@ -476,13 +498,22 @@ div.button span {
 .portlet > .portlet-title > .caption {
   color: #d1d1d1;
 }
+.portlet-filters-preview .btn-users-filters {
+  background-color: #333437;
+  border-color: #3d3e43;
+}
+.portlet-filters-preview .btn-users-filters:hover {
+  background-color: #292a2d;
+  border-color: #3d3e43;
+  color: #fff;
+}
 
 
 .panel {
   background-color: #333437;
 }
 .panel-info {
-  border-color: #222;
+  border-color: #3d3e43;
 }
 .panel-default {
   border-color: #3d3e43;
@@ -535,7 +566,6 @@ div.button span {
 }
 .modal-footer {
   border-top: 1px solid #222;
-    background-color: #333437;
   border-radius: 0 0 5px 5px;
 }
 .modal-header .close,
@@ -561,6 +591,13 @@ textarea[readonly] {
 
 .required-label {
   color: #fb3d39 !important;
+}
+
+
+.flowchart {
+  background-image: none !important;
+  background-color: #333437 !important;
+  border-color: #3d3e43 !important;
 }
 
 
@@ -599,6 +636,10 @@ textarea[readonly] {
 }
 
 
+.chat-modal-body {
+  background-color: #292a2d;
+  padding: 20px;
+}
 .chat-users {
   border-right: 1px solid #555 !important;
 }
