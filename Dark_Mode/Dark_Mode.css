@@ -1,6 +1,6 @@
 /***
 Dark_Mode
-Version 1.1.1
+Version 1.1.2
 -------------------------------
 //////Tested for versions//////
 ---------------------
@@ -295,6 +295,37 @@ html .row-selected td {
 }
 
 
+/***
+Overrides the base color to be black when the background is too light START
+***/
+.bg-color-value {
+  color: #222;
+}
+/***
+Overrides the base color to be black when the background is too light STOP
+***/
+
+.progress-bar {
+  color: #222;
+}
+
+/***
+Popover profile on hover START
+***/
+.popover {
+  background-color: #333437 !important;
+}
+.popover-title {
+  background-color: #292a2d !important;
+  border-color: #222 !important;
+}
+.popover.left > .arrow::after{
+  border-left-color: #333437 !important;
+}
+/***
+Popover profile on hover STOP
+***/
+
 a{
   color: #65c7f9;
 }
@@ -508,6 +539,14 @@ div.button span {
   border-color: #3d3e43;
   color: #fff;
 }
+.filters-preview-box {
+  border-color: #3d3e43 !important;
+}
+.portlet-filters-preview .btn-filters-templates {
+  background-color: #333437 !important;
+  border-right-color: #222 !important;
+  border-left-color: #222 !important;
+}
 
 
 .panel {
@@ -716,6 +755,9 @@ Code Editor START
 .CodeMirror-cursor {
   border-left: 1px solid #c1c1c1 !important;
 }
+.CodeMirror-line {
+  color: #556699 !important;
+}
 .cm-s-default .cm-tag {
   color: #556699 !important;
 }
@@ -774,8 +816,9 @@ Gantt Chart START
   background-color: #333437 !important;
   color: #fff;
 }
-.gantt_container, .gantt_tooltip {
+.gantt_container {
   background-color: #333437 !important;
+  margin-top: -1px;
 }
 .gantt_layout_cell_border_top {
   border-top: 1px solid #3d3e43 !important;
@@ -788,6 +831,54 @@ Gantt Chart START
 }
 .gantt_layout_cell_border_right {
   border-right: 1px solid #3d3e43 !important;
+}
+.gantt_row, 
+.gantt_task_row {
+  border-bottom: 1px solid #444 !important;
+  background-color: #333437 !important;
+}
+.gantt_cell,
+.gantt_task_cell {
+  border-color: #444 !important;
+}
+.gantt_row.gantt_row.gantt_selected,
+.gantt_task_row.gantt_selected {
+  background-image: linear-gradient(0deg,#444 0,#555) !important;
+}
+.gantt_row.gantt_row:hover {
+  background-image: linear-gradient(0deg,#444 0,#555) !important;
+}
+.gantt_grid_scale, 
+.gantt_task_scale {
+  box-shadow: none !important;
+  background-color: #222 !important;
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#222),color-stop(50%,#333),color-stop(100%,#222)) !important;
+  background-image: none;
+  color: #c1c1c1 !important;
+  border-bottom-color: #444 !important;
+}
+.gantt_grid_head_cell {
+  border-right-color: #444 !important;
+}
+.gantt_scale_line {
+  border-top-color: #444 !important;
+}
+.gantt_scale_cell {
+  border-right-color: #444 !important;
+}
+.gantt_tree_icon.gantt_file {
+  filter: invert(70%);
+  -webkit-filter: invert(70%);
+}
+.gantt_tree_icon.gantt_close,
+.gantt_tree_icon.gantt_open{
+  filter: invert(70%);
+  -webkit-filter: invert(70%);
+}
+.gantt_tree_icon.gantt_folder_open,
+.gantt_tree_icon.gantt_folder_closed{
+  filter: invert(80%);
+  -webkit-filter: invert(80%);
 }
 /***
 Gantt Chart STOP
