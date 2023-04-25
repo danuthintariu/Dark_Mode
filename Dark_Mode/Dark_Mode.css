@@ -1,6 +1,6 @@
 /***
 Dark_Mode
-Version 1.1.4
+Version 1.1.5
 -------------------------------
 //////Tested for versions//////
 ---------------------
@@ -1174,10 +1174,10 @@ Login page
   background-color: #292a2d;
   clear: both;
   border: 0px;
-  border-bottom: 1px solid #303030;
+  /*border-bottom: 1px solid #303030;*/
   padding: 0px 30px 25px 30px;
-  margin-left: -30px;
-  margin-right: -30px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .login .content .form-actions .checkbox {
