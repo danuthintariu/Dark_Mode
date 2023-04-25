@@ -1,6 +1,6 @@
 /***
 Dark_Mode
-Version 1.1.3
+Version 1.1.4
 -------------------------------
 //////Tested for versions//////
 ---------------------
@@ -204,6 +204,10 @@ legend {
 
 
 ul.listing-grid > li {
+  border-color: #3d3e43 !important;
+  background-color: #333437 !important;
+}
+ul.listing-mobile > li {
   border-color: #3d3e43 !important;
   background-color: #333437 !important;
 }
