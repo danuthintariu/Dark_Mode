@@ -1,6 +1,6 @@
 /***
 Dark_Mode
-Version 1.1.5
+Version 1.1.6
 -------------------------------
 //////Tested for versions//////
 ---------------------
@@ -30,9 +30,12 @@ DarkMode design START
 .navbar-default {
   border-color: #3d3e43 !important;
   background-color: #292a2d !important;
+  border-radius: 5px 5px;
 }
-
-
+.navbar-default .navbar-toggle {
+  border-color: #3d3e43;
+  color: #c1c1c1;
+}
 .navbar-default .navbar-nav > li > a {
   color: #d1d1d1;
   border: 1px solid #3d3e43;
@@ -63,6 +66,14 @@ DarkMode design START
 .navbar-default .navbar-nav > .active > a:hover {
   color: #d1d1d1;
   background-color: #333437;
+}
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {
+  border-color: #222;
+}
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+  background-color: #ddd;
 }
 
 
