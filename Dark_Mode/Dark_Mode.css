@@ -1,6 +1,6 @@
 /***
 Dark_Mode
-Version 1.1.6
+Version 1.1.7
 -------------------------------
 //////Tested for versions//////
 ---------------------
@@ -74,6 +74,17 @@ DarkMode design START
 .navbar-default .navbar-toggle:focus, 
 .navbar-default .navbar-toggle:hover {
   background-color: #ddd;
+}
+.navbar-nav .open .dropdown-menu {
+  background-color: #333437;
+  border-color: #3d3e43;
+}
+.navbar-nav .open .dropdown-menu > li > a {
+  color: #c1c1c1 !important;
+}
+.navbar-nav .open .dropdown-menu > li >a:hover {
+  background-color: #292a2d !important;
+  color: #fff !important;
 }
 
 
@@ -964,6 +975,9 @@ Page header START
 .header .search-form .input-icon > i,
 .page-sidebar-menu .search-form .input-icon > i {
   color: #292a2d;
+}
+.header .nav > li > .dropdown-menu::after {
+  border-bottom-color: #333437 !important;
 }
 /***
 Page sidebar
