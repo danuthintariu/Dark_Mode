@@ -203,6 +203,12 @@ legend {
 }
 
 
+ul.listing-grid > li {
+  border-color: #3d3e43 !important;
+  background-color: #333437 !important;
+}
+
+
 .table-scrollable {
   border: 1px solid #222;
 }
