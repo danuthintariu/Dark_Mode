@@ -1,6 +1,6 @@
 /***
 Dark_Mode
-Version 1.1.2
+Version 1.1.3
 -------------------------------
 //////Tested for versions//////
 ---------------------
@@ -91,6 +91,9 @@ DarkMode design START
 }
 .dropdown-menu li > a {
   color: #d1d1d1;
+}
+.dropdown-menu .divider {
+  background-color: #555;
 }
 .dropdown-menu.extended::before, 
 .dropdown-menu.extended::after {
@@ -322,6 +325,9 @@ Popover profile on hover START
 .popover.left > .arrow::after{
   border-left-color: #333437 !important;
 }
+.popover.top > .arrow::after{
+  border-top-color: #333437 !important;
+}
 /***
 Popover profile on hover STOP
 ***/
@@ -340,6 +346,14 @@ hr {
 
 .tooltip-icon {
   color: #0099cc !important;
+}
+
+
+.datepicker-dropdown.datepicker-orient-bottom::after {
+  border-top-color: #333437;
+}
+.datepicker-dropdown.datepicker-orient-top::after {
+  border-bottom-color: #333437;
 }
 
 
@@ -432,7 +446,6 @@ div.button span {
 }
 .chosen-container-active.chosen-with-drop .chosen-single {
   border: 1px solid #3d3e43;
-  -webkit-box-shadow: 0 0 0 #222 inset !important;
 }
 .chosen-container-single .chosen-search input[type="text"] {
   outline: 0;
@@ -885,6 +898,17 @@ Gantt Chart STOP
 ***/
 
 
+.highcharts-background,
+.highcharts-grid, 
+.highcharts-button,
+.highcharts-axis-labels,
+.highcharts-contextmenu {
+   filter: invert(80%);
+  -webkit-filter: invert(80%);
+}
+
+
+
 /***
 DarkMode design STOP
 ***/
@@ -1101,14 +1125,12 @@ Login page
 .login {
   background-color: #515255 !important;
 }
-
 .login .logo {
   margin: 0 auto;   
   margin-top:60px;
   padding: 15px;
   text-align: center;
 }  
-
 .login .content {
   background-color:#292a2d; 
   width: 360px;
@@ -1119,29 +1141,20 @@ Login page
   padding-bottom: 0px;  
   border-radius: 4px;
 }
-
 .login .content h4  {
   color: #555;
 }
-
 .login .content p {
   color: #c1c1c1;
 }
-
 .login .content .login-form,
 .login .content .forget-form {
     padding: 0px;
     margin: 0px;
 }
-
-.login .content .forget-form {
-  
-}
-
 .login .content .register-form {
   display: none;
 }
-
 .login .content .form-title {
   font-weight: 300;
   margin-bottom: 25px;
@@ -1244,7 +1257,7 @@ Login page
   }
 
   .login .content {
-    padding1: 20px; 
+    padding: 20px; 
     width: 280px;
   }
 
