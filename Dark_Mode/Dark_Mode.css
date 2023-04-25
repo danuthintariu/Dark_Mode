@@ -12,6 +12,7 @@ Extension   -> 3.3.1
 /***
 Reset and overrides the current skin
 ***/
+
 body {
   color: #d1d1d1;
   background-color: #35363a !important;
@@ -697,6 +698,9 @@ textarea[readonly] {
 }
 
 
+/***
+Code Editor START
+***/
 .CodeMirror {
   color: #c1c1c1 !important;
   background-color: #222 !important;
@@ -716,7 +720,7 @@ textarea[readonly] {
   color: #556699 !important;
 }
 .cm-s-default .cm-atom {
-  color: #cc0099 !important;
+  color: #cccc00 !important;
 }
 .cm-s-default .cm-keyword {
   color: #ff4d4d !important;
@@ -730,29 +734,36 @@ textarea[readonly] {
 .cm-s-default .cm-variable-3 {
   color: #666699 !important;
 }
-.cm-s-default .cm-meta {
+.cm-s-default .cm-meta,
+.cm-s-default .cm-variable,
+.cm-s-default .cm-operator {
   color: #cc00cc !important;
 }
 .cm-s-default .cm-string {
   color: #228877 !important;
 }
-.cm-s-default .cm-variable {
-  color: #cc00cc !important;
-}
 .cm-s-default .cm-builtin {
   color: #fff !important;
 }
 .cm-s-default .cm-variable-2 {
-  color: #cc88uu !important;
+  color: #3366ff !important;
 }
 .cm-s-default .cm-attribute {
   color: #ff5588 !important;
 }
+.cm-s-default .cm-def {
+  color: #66cc00 !important;
+}
+/***
+Code Editor STOP
+***/
 
-
+/***
+Gantt Chart START
+***/
 .dhtmlx-gantt-menu {
   background: #292a2d !important;
-  border: 1px solid #3d3e43 !important;;
+  border: 1px solid #3d3e43 !important;
 }
 .gantt-control {
   background-color: #292a2d !important;
@@ -778,7 +789,9 @@ textarea[readonly] {
 .gantt_layout_cell_border_right {
   border-right: 1px solid #3d3e43 !important;
 }
-
+/***
+Gantt Chart STOP
+***/
 
 
 /***
