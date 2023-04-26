@@ -1,6 +1,6 @@
 /***
 Dark_Mode
-Version 1.1.7
+Version 1.1.8
 -------------------------------
 //////Tested for versions//////
 ---------------------
@@ -25,8 +25,6 @@ DarkMode design START
 .navbar-items .navbar-brand.selected {
   background-color: #333437 !important;
 }
-
-
 .navbar-default {
   border-color: #3d3e43 !important;
   background-color: #292a2d !important;
