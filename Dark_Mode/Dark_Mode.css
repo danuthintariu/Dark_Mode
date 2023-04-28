@@ -1,6 +1,6 @@
 /***
-Dark_Mode
-Version 1.1.8
+Themeverse - Dark_Mode
+Version 1.1.9
 -------------------------------
 //////Tested for versions//////
 ---------------------
@@ -937,6 +937,36 @@ Gantt Chart STOP
   -webkit-filter: invert(80%);
 }
 
+
+.kanban-item {
+  background: #333437 !important;
+  border-color: #3d3e43 !important;
+}
+
+
+.izoColorPicker-popup-bottom::after {
+  border-top-color: #333437;
+}
+.izoColorPicker-popup-top::after {
+  border-bottom-color: #333437;
+}
+.izoColorPicker-popup{
+  background-color: #333437;
+}
+.izoColorPicker-color-preview {
+  border-color: #3d3e43;
+  background-color: #292a2d;
+}
+.izoColorPicker-save-color {
+  border: 1px solid #3d3e43;
+  color: #c1c1c1;
+  background-color: #292a2d;
+}
+.izoColorPicker-popup input.izoColorPicker-input-color {
+  border-color: #3d3e43;
+  background-color: #292a2d;
+  color: #c1c1c1;
+}
 
 
 /***
