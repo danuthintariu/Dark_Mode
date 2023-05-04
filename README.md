@@ -1,6 +1,10 @@
 # Dark_Mode
 Dark_Mode skin for Rukovoditel
 
+## Skin Moved
+This skin has been integrated with a plugin that checks if updates are available that solve different things and has been moved here: https://github.com/danuthintariu/Themeverse \
+This skin will still be available for a while after which it will be deleted, will no longer receive any new updates. The new skin will be avaiable and updated for unlimited time. You can continue to use the new skin without having to install the plugin if you dont't want to, but if you have any problem you need to come here and check if new update was made that may solve your problem.
+
 ### Tested for versions
 - Rukovoditel 3.3.1 -> Extension 3.3.1
 
