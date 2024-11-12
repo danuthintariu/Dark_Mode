@@ -1247,3 +1247,17 @@ ul.listing-mobile>li{
     background: #3b3d42;
     color: #d1d1d1;
 }
+
+/* START insert 1px space in table and comments betwen multi-drop field when used as status with background */
+.comments-history th, td {
+  padding: 0.5px;
+}
+
+.fieldtype_dropdown_multiple div {
+  margin-top: 1px;
+}
+
+.form-group div {
+  margin-top: 1px;
+}
+/* STOP insert 1px space in table and comments betwen multi-drop field when used as status with background */
