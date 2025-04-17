@@ -339,7 +339,13 @@ a:hover{
 }
 .chosen-container-active.chosen-with-drop .chosen-single {
   border: 1px solid #3d3e43;
+  -webkit-box-shadow: 0 0 0 #222 inset !important; /* For WebKit-based browsers */
+  box-shadow: 0 0 0 #222 inset !important; /* Standard property for compatibility */
+}
+.chosen-container-active.chosen-with-drop .chosen-single {
+  border: 1px solid #3d3e43;
   -webkit-box-shadow: 0 0 0 #222 inset !important;
+  box-shadow: 0 0 0 #222 inset !important;
 }
 .chosen-container-single .chosen-search input[type="text"] {
   outline: 0;
@@ -853,9 +859,9 @@ Login page
     margin: 0px;
 }
 
-.login .content .forget-form {
+/*.login .content .forget-form {
   
-}
+}*/
 
 .login .content .register-form {
   display: none;
@@ -963,7 +969,7 @@ Login page
   }
 
   .login .content {
-    padding1: 20px; 
+    padding: 20px; 
     width: 280px;
   }
 
